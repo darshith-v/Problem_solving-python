@@ -21,23 +21,23 @@ class Arraysumcalculator:
             i+=1
         return sum_of_array
 
-#  in for loop
+L = Arraysumcalculator()            
+L.take_input()
+total = L.calculate_sum()
+print("total sum of the array: ",total)
 
-# L = Arraysumcalculator()            
-# L.take_input()
-# total = L.calculate_sum()
-# print("total sum of the array: ",total//2)
+'''(using for loop)
+lst = []
 
-# lst = []
+n = int(input("enter the numbers of elements: "))
 
-# n = int(input("enter the numbers of elements: "))
+for i in range(n):
+    elements = int(input())
+    lst.append(elements)
 
-# for i in range(n):
-#     elements = int(input())
-#     lst.append(elements)
+sm = 0
+for em in lst:
+    sm = sm + em  
 
-# sm = 0
-# for em in lst:
-#     sm = sm + em  
-
-# print(sm)    
+print(sm)    
+'''
