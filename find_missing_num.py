@@ -2,7 +2,7 @@ def maximum(arr):
     n = len(arr)
    
     #for maximum value
-    mx = arr[0]
+    mx = 0
     for i in range(1,n):
         arr[i] > mx
         mx = arr[i]
