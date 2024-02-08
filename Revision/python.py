@@ -1,4 +1,6 @@
 '''
+
+#1
 def solveMefirst(a,b):
   return a + b;
 
@@ -7,6 +9,7 @@ num2 = int(input())
 res = solveMefirst(num1,num2)
 print(res)
 
+#2
 def simpleArraySum(arr):
   return sum(arr)
 
@@ -14,7 +17,7 @@ def simpleArraySum(arr):
 myArray = [1,2,3,4,5];
 print(simpleArraySum(myArray));
 
-
+#3
 def campareTriplets(a,b):
   alice = 0
   bob = 0
@@ -30,4 +33,31 @@ array1 = 5, 6, 7
 array2 = 3, 6, 10
 
 print(campareTriplets(array1, array2));
+
+#4
+def aVeryBigSum(ar):
+  return sum(ar)
+
+a1 = 100000002
+a2 = 100000003
+a3 = a2, a1
+result = aVeryBigSum(a3);
+print(result);
+
 '''
+
+
+def diagonalDifferce(arr):
+  leftdiag = rightdiag = 0
+  for i in range(n):
+    leftdiag = leftdiag + arr[i][i]
+    rightdiag = rightdiag + arr[i][n - 1 - i]
+  return abs(leftdiag - rightdiag);
+
+
+n = int(input().strip())
+arr = []
+for _ in range(n):
+  arr.append(list(map(int, input().rstrip().split())))
+
+print(diagonalDifferce(arr));
