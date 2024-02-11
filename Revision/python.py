@@ -44,8 +44,8 @@ a3 = a2, a1
 result = aVeryBigSum(a3);
 print(result);
 
-'''
 
+#5
 
 def diagonalDifferce(arr):
   leftdiag = rightdiag = 0
@@ -61,3 +61,17 @@ for _ in range(n):
   arr.append(list(map(int, input().rstrip().split())))
 
 print(diagonalDifferce(arr));
+
+#6
+
+def hashPattern(n):
+  for i in range(1, n + 1):
+    s = "#" * i; 
+    print(s.rjust(n))
+  
+
+n = int(input())
+result = hashPattern(n);
+print(result)
+
+'''
