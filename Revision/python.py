@@ -74,4 +74,22 @@ n = int(input())
 result = hashPattern(n);
 print(result)
 
+
+# 7
+
+def miniMaxSum(arr):
+  s = 0
+  minnum = 999999999999
+  maxnum = 0
+
+  n = len(arr)
+  for i in range(n):
+    s = s + arr[i]
+    minnum = min(minnum, arr[i])
+    maxnum = max(maxnum, arr[i])
+  print(s-maxnum, s-minnum);
+
+arr = [1,3,5,7,9];
+print(miniMaxSum(arr))
+
 '''
