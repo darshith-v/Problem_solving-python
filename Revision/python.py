@@ -93,3 +93,21 @@ arr = [1,3,5,7,9];
 print(miniMaxSum(arr))
 
 '''
+
+#8
+
+def birthdayCakeCandles(arr):
+  '''
+  n = len(arr)
+  maxnum = 0
+  count = 0
+  for i in range(n):
+    if(arr[i] > maxnum):
+      maxnum = arr[i]
+      count = 1
+    elif arr[i] == maxnum:
+      count+=1
+  return count'''
+  return arr.count(max(arr)) #another method
+
+print(birthdayCakeCandles([4,4,1,3]));
