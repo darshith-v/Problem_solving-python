@@ -112,3 +112,15 @@ def birthdayCakeCandles(arr):
 
 print(birthdayCakeCandles([4,4,1,3]));
 '''
+#9
+
+def timeComversion(time):
+  meridian = time[-2:]
+  if meridian == 'AM' and time[:2] == '12':
+    time = '00' + time[2:]
+  if meridian == 'PM' and time[:2]!= '12' :
+    time = str(12 + int(time[:2])) + time[2:]
+  return time
+
+result = '07:05:45PM'
+print(timeComversion(result));
