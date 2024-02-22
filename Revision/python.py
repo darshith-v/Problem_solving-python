@@ -111,7 +111,7 @@ def birthdayCakeCandles(arr):
   # return arr.count(max(arr)) #another method
 
 print(birthdayCakeCandles([4,4,1,3]));
-'''
+
 #9
 
 def timeComversion(time):
@@ -124,3 +124,5 @@ def timeComversion(time):
 
 result = '07:05:45PM'
 print(timeComversion(result));
+
+'''
