@@ -126,3 +126,17 @@ result = '07:05:45PM'
 print(timeComversion(result));
 
 '''
+
+def fibonacci_recursive(n):
+    if n <= 0:
+        return "Please enter a positive integer"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
+
+# Example usage
+n = 10
+print(f"The {n}th Fibonacci number is: {fibonacci_recursive(n)}")
