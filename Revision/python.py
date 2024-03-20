@@ -125,7 +125,7 @@ def timeComversion(time):
 result = '07:05:45PM'
 print(timeComversion(result));
 
-'''
+
 
 def fibonacci_recursive(n):
     if n <= 0:
@@ -140,3 +140,22 @@ def fibonacci_recursive(n):
 # Example usage
 n = 10
 print(f"The {n}th Fibonacci number is: {fibonacci_recursive(n)}")
+'''
+
+
+
+def febonacci(n):
+  a = 0
+  b = 1
+
+  for i in range(i <= n):
+    c = a[i] + b[i]
+    a[i] = b[i]
+    b[i] = c[i]
+
+  return c
+
+print(febonacci(9))
+  
+'''
+'''
