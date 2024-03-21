@@ -140,22 +140,25 @@ def fibonacci_recursive(n):
 # Example usage
 n = 10
 print(f"The {n}th Fibonacci number is: {fibonacci_recursive(n)}")
-'''
 
+#febonacci in another method
 
-
-def febonacci(n):
+def febonacci(num):
   a = 0
   b = 1
-
-  for i in range(i <= n):
-    c = a[i] + b[i]
-    a[i] = b[i]
-    b[i] = c[i]
-
-  return c
+  if num <= 0:
+    return "please enter a positive integer"
+  else:  
+    for i in range(num):
+      c = a + b
+      a = b
+      b = c
+    return c
 
 print(febonacci(9))
-  
 '''
-'''
+
+def palidroma(n):
+  while(n > 0):
+    r = n % 10
+    sum = sum * 10 - r
