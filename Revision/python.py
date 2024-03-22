@@ -142,7 +142,7 @@ n = 10
 print(f"The {n}th Fibonacci number is: {fibonacci_recursive(n)}")
 
 #febonacci in another method
-'''
+
 def febonacci(num):
   a = 0
   b = 1
@@ -169,15 +169,28 @@ def palidroma(n):
   return sum
 
 def main():
-  '''n = int(input("enter your number: "))
+  n = int(input("enter your number: "))
   m = palidroma(n)
   if(n == m):
     print("Its is a palidroma number")
   else:
     print("its not a palidroma")  
-    '''
+    
   
   p = int(input("enter your number: "))
   o = febonacci(p)
   
 main()
+'''
+
+'''
+'''
+
+# factorial number
+def factorial(num):
+  result = 1
+  for i in range(1, num+1):
+    result = result * i
+  return result
+
+print(factorial(5))
