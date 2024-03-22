@@ -142,7 +142,7 @@ n = 10
 print(f"The {n}th Fibonacci number is: {fibonacci_recursive(n)}")
 
 #febonacci in another method
-
+'''
 def febonacci(num):
   a = 0
   b = 1
@@ -150,15 +150,34 @@ def febonacci(num):
     return "please enter a positive integer"
   else:  
     for i in range(num):
+      print(a)
       c = a + b
       a = b
       b = c
     return c
 
-print(febonacci(9))
-'''
+# print(febonacci(9))
+
 
 def palidroma(n):
+  rem = 0
+  sum = 0
   while(n > 0):
-    r = n % 10
-    sum = sum * 10 - r
+    rem = n % 10
+    sum = sum * 10 + rem
+    n = n // 10
+  return sum
+
+def main():
+  '''n = int(input("enter your number: "))
+  m = palidroma(n)
+  if(n == m):
+    print("Its is a palidroma number")
+  else:
+    print("its not a palidroma")  
+    '''
+  
+  p = int(input("enter your number: "))
+  o = febonacci(p)
+  
+main()
