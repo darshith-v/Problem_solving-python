@@ -181,7 +181,7 @@ def main():
   o = febonacci(p)
   
 main()
-'''
+
 
 '''
 '''
@@ -194,3 +194,23 @@ def factorial(num):
   return result
 
 print(factorial(5))
+'''
+
+def perfect_number(n):
+  sum = 0
+  for i in range(1, n):
+    if(n % i == 0):
+      sum += i
+  return sum    
+
+def main():
+  n = int(input("enter your number: "))
+  m = perfect_number(n)
+  if(n == m):
+    print("it is a perfect number")
+  else:
+    print("it's not a perfect number")  
+
+main()
+
+  
