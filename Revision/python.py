@@ -194,7 +194,7 @@ def factorial(num):
   return result
 
 print(factorial(5))
-'''
+
 
 def perfect_number(n):
   sum = 0
@@ -213,4 +213,19 @@ def main():
 
 main()
 
+#sum of digit given number  
+
+def sum_digit(num):
+  sum = 0
+  while(num > 0):
+    remainder = num % 10
+    sum = sum + remainder
+    num = num // 10
+  return sum
+
+def main():
+  n = int(input("enter your number: "))
+  print(sum_digit(n))
   
+main()  
+'''
