@@ -229,3 +229,22 @@ def main():
   
 main()  
 '''
+
+def prime_num(num):
+  count = 0
+  for i in range(1,num + 1):
+    if(num % i == 0):
+      count = count + 1
+  return count
+
+def main():
+  n = int(input("enter num: "))
+  m = prime_num(n)
+
+  if(m == 2):
+    print("prime number")
+  else: 
+    print("not a prime number")  
+
+main()    
+    
