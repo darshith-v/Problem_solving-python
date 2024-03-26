@@ -228,7 +228,7 @@ def main():
   print(sum_digit(n))
   
 main()  
-'''
+
 
 def prime_num(num):
   count = 0
@@ -247,4 +247,27 @@ def main():
     print("not a prime number")  
 
 main()    
-    
+  '''  
+  
+def prime_num(num):
+  count = 0
+  for i in range(1,num + 1):
+    if(num % i == 0):
+      count = count + 1
+
+  if(count == 2):
+    return 1
+  else: 
+    return 0  
+
+def main():
+  n = int(input("from: "))
+  m = int(input("to: "))
+
+  for i in range(n, m+1):
+    result = prime_num(i)
+    if(result == 1):
+      print(i)
+      
+
+main()
