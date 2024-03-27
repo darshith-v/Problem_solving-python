@@ -247,7 +247,7 @@ def main():
     print("not a prime number")  
 
 main()    
-  '''  
+    
   
 def prime_num(num):
   count = 0
@@ -269,5 +269,29 @@ def main():
     if(result == 1):
       print(i)
       
+
+main()
+'''
+
+def strong_num(num):
+  sum = 0
+  while(num > 0):
+    rem = num % 10
+    fact = 1
+    for i in range(rem, 1, -1): #range(start, stop, step)
+      fact = fact * i
+    sum += fact
+    num = num // 10
+
+  return sum
+
+def main():
+  n = int(input("enter the number: "))
+  m = strong_num(n)
+
+  if (n == m):
+    print("it is a strong number")
+  else:
+    print("it is not a strong number")  
 
 main()
