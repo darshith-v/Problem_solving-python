@@ -229,6 +229,7 @@ def main():
   
 main()  
 
+# Prime number
 
 def prime_num(num):
   count = 0
@@ -248,6 +249,7 @@ def main():
 
 main()    
     
+# Range of prime number    
   
 def prime_num(num):
   count = 0
@@ -271,7 +273,7 @@ def main():
       
 
 main()
-'''
+
 # strong number program
 def strong_num(num):
   temp = num
@@ -285,9 +287,9 @@ def strong_num(num):
     num = num // 10
 
   if(sum == temp):
-    return 1
+    return True
   else:
-    return 0
+    return False
 
 def main():
   n = int(input("enter the number: "))
@@ -295,14 +297,37 @@ def main():
 
   for i in range(n, k+1):
     m = strong_num(i)
-    if(m == 1):
+    if(m == True):
       print(i)
 
-  
 
-  '''if (n == m):
-    print("it is a strong number")
-  else:
-    print("it is not a strong number")  '''
+
+  # if (n == m):
+  #   print("it is a strong number")
+  # else:
+  #   print("it is not a strong number")
 
 main()
+
+'''
+def perfect_num(num):
+  temp = num
+  sum = 0
+  for i in range(1, num):
+    if(num % i == 0):
+      sum += i
+  if(temp == sum):
+    return True
+  else:
+    return False
+
+def main() :
+  n = int(input("enter from number: "))
+  m = int(input("enter last number: "))
+
+  for i in range(n, m+1):
+    k = perfect_num(i)
+    if(k == True):
+      print(i)
+
+main()    
