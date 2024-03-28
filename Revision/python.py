@@ -272,8 +272,9 @@ def main():
 
 main()
 '''
-
+# strong number program
 def strong_num(num):
+  temp = num
   sum = 0
   while(num > 0):
     rem = num % 10
@@ -283,15 +284,25 @@ def strong_num(num):
     sum += fact
     num = num // 10
 
-  return sum
+  if(sum == temp):
+    return 1
+  else:
+    return 0
 
 def main():
   n = int(input("enter the number: "))
-  m = strong_num(n)
+  k = int(input("enter the last number: "))
 
-  if (n == m):
+  for i in range(n, k+1):
+    m = strong_num(i)
+    if(m == 1):
+      print(i)
+
+  
+
+  '''if (n == m):
     print("it is a strong number")
   else:
-    print("it is not a strong number")  
+    print("it is not a strong number")  '''
 
 main()
