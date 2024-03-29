@@ -309,7 +309,7 @@ def main():
 
 main()
 
-'''
+
 def perfect_num(num):
   temp = num
   sum = 0
@@ -331,3 +331,49 @@ def main() :
       print(i)
 
 main()    
+
+# find a number is arm strong or not
+def armStrong_num(num):
+  sum = 0
+  while(num > 0):
+    rem = num % 10
+    sum += (rem ** 3)
+    num = num // 10
+  return sum
+
+def main():
+  n = int(input("enter the number: "))
+  m = armStrong_num(n)
+  if(n == m):
+    print("Its is an arm strong number: ")
+  else:
+    print("Its not a arm strong number")  
+
+main()    
+
+'''
+# range of armstrong number
+def armStrong_num(num):
+  temp = num
+  sum = 0
+  while(num > 0):
+    rem = num % 10
+    sum += (rem ** 3)
+    num = num // 10
+  if(sum == temp):
+    return True
+  else:
+    return False  
+
+def main():
+  n = int(input("enter the from number: "))
+  m = int(input("enter the to number: "))
+
+  for i in range(n, m + 1):
+    m = armStrong_num(i)
+    if(m == True):
+      print(i)  
+
+main()
+
+
