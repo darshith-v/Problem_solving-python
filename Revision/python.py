@@ -351,7 +351,7 @@ def main():
 
 main()    
 
-'''
+
 # range of armstrong number
 def armStrong_num(num):
   temp = num
@@ -375,5 +375,5 @@ def main():
       print(i)  
 
 main()
-
+'''
 
