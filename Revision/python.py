@@ -376,4 +376,21 @@ def main():
 
 main()
 '''
+# Armstrong number is something if we add each element square or cube or **4 in a number it should return the initial number.
+# EX 1 : 153,  cube of 1^3 + 5^3 + 3^3 = 153
+# if number is four digit you should power each element by ^4.
+# EX 2 : 9474  quartic of 9^4 + 4^4 + 7^4 + 4^4 = 9474
+# num = 9474
+# count = 0 
+# num_count = []
+# add = 0
+#
+# for i in str(num):
+#     count = pow(int(i),len(str(num)))
+#     # count = int(i) ** len(str(num))
+#     num_count.append(count)
+#     add += count
+#
+# print(num_count)
+# print(add)
 
