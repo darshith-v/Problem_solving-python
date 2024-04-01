@@ -1,29 +1,32 @@
-# def coins():
-#     t = int(input())
+'''
 
-#     for _ in range(t):
-#         alice, bob = map(int, input().split())
-#         maxi = max(alice,bob)
-#         for i in range(maxi):
+def coins():
+    t = int(input())
 
-#             if (alice == 1000000000 and bob == 1000000000):
-#                 break
+    for _ in range(t):
+        alice, bob = map(int, input().split())
+        maxi = max(alice,bob)
+        for i in range(maxi):
 
-#             if alice >= bob:
-#                 alice -= 1
-#             else:
-#                 alice, bob = bob, alice
-#                 alice -= 1
+            if (alice == 1000000000 and bob == 1000000000):
+                break
 
-#             if bob >= alice:
-#                 bob -= 1
-#             else:
-#                 alice, bob = bob, alice
-#                 bob -= 1
+            if alice >= bob:
+                alice -= 1
+            else:
+                alice, bob = bob, alice
+                alice -= 1
 
-#         print(f'{"Alice" if alice > bob else "Bob"}')
+            if bob >= alice:
+                bob -= 1
+            else:
+                alice, bob = bob, alice
+                bob -= 1
 
-# coins()
+        print(f'{"Alice" if alice > bob else "Bob"}')
+
+coins()
+'''
 
 count = 0
 for i in range(1,100):
