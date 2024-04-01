@@ -391,8 +391,8 @@ def main():
   print(reverse_num(n))
 
 main()
-'''
 
+# factorial of given number using recursive function
 
 def fact_recursion(num):
   if(num == 0):
@@ -408,3 +408,25 @@ def main():
   print(m)
 
 main()  
+'''
+
+def fibonacci_recursive(num):
+  res = 1
+  if(num == 0):
+    return "Invalid number, give number more than 0"
+  elif(num == 1):
+    res = 0
+  elif(num == 2):
+    res = 1
+  else:
+    res = fibonacci_recursive(num - 1)  + fibonacci_recursive(num - 2)
+
+  return res
+
+def main():
+  n = int(input("enter the position of number you want to display in a fibonacci series: "))
+  m = fibonacci_recursive(n)
+  print(m)
+
+main()
+
