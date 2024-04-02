@@ -408,7 +408,8 @@ def main():
   print(m)
 
 main()  
-'''
+
+# fibonacci of given number using recursive function
 
 def fibonacci_recursive(num):
   res = 1
@@ -429,4 +430,14 @@ def main():
   print(m)
 
 main()
+
+'''
+# Arrays
+
+Input = int(input("Enter num: "))
+Array = []
+for i in range(0, Input):
+  loop_input = int(input())
+  Array.append(loop_input)
+print(Array)
 
