@@ -431,9 +431,16 @@ def main():
 
 main()
 
-'''
+
 # Arrays
 
+arr = [10,20,30,40,50]
+arr[1] = 21
+for i in arr:
+  print(i)
+
+#Range of Array input
+  
 Input = int(input("Enter num: "))
 Array = []
 for i in range(0, Input):
@@ -441,3 +448,16 @@ for i in range(0, Input):
   Array.append(loop_input)
 print(Array)
 
+'''
+#2D ARRAY
+
+reginal_country = [
+  ["US", "CANADA"],
+  ["INDIA", "UK"],
+  ["GOA", "DEHLI"]
+]
+
+print(reginal_country[2][1])
+
+# for i in reginal_country:
+#   print(i[1])
