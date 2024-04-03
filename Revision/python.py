@@ -499,3 +499,13 @@ def sum_of_first_N():
 
 print(sum_of_first_N())    
 '''
+
+def ternary_oparator():
+  a = int(input())
+  b = int(input())
+  c = int(input())
+
+  k = a if ((a > b) and (a > c)) else b  if (b > c)  else c
+  return  k
+
+print(ternary_oparator())  
