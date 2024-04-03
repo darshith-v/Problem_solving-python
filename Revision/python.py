@@ -472,3 +472,15 @@ def swap_two_num(a, b):
 
 print(swap_two_num(2,1))
 '''
+#Biggest of two interger
+
+def biggest_of_two_num():
+  a = int(input("enter a: "))
+  b = int(input("enter b: "))
+
+  if(a > b):
+    print("A is biggest number")
+  else:
+    print("B is biggest number")  
+
+print(biggest_of_two_num())    
