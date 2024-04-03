@@ -471,7 +471,7 @@ def swap_two_num(a, b):
   return a, b
 
 print(swap_two_num(2,1))
-'''
+
 #Biggest of two interger
 
 def biggest_of_two_num():
@@ -484,3 +484,18 @@ def biggest_of_two_num():
     print("B is biggest number")  
 
 print(biggest_of_two_num())    
+
+
+
+#sum of first N number
+def sum_of_first_N():
+  n = int(input("enter first number: "))
+  m = int(input("enter last number: "))
+
+  sum = 0
+  for i in range(n, m+1):
+    sum += i
+  return sum
+
+print(sum_of_first_N())    
+'''
