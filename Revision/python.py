@@ -510,7 +510,7 @@ def ternary_oparator():
 
 print(ternary_oparator())  
 
-'''
+# print 1 - 10 number using while loop
 
 def whileloop(n):
   i = 1
@@ -520,3 +520,23 @@ def whileloop(n):
   return i
 
 print(whileloop(10))
+
+
+
+# display even number in a range using while loop
+
+def even_num(num):
+  i = 1
+  while (i < num):
+    if(i % 2 == 0):
+      print(i)
+    i += 1
+  return i
+
+def main():
+  n = int(input("=> : "))
+  m = even_num(n)
+  print(m)
+
+main()  
+'''
