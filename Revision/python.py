@@ -498,7 +498,7 @@ def sum_of_first_N():
   return sum
 
 print(sum_of_first_N())    
-'''
+
 
 def ternary_oparator():
   a = int(input())
@@ -509,3 +509,14 @@ def ternary_oparator():
   return  k
 
 print(ternary_oparator())  
+
+'''
+
+def whileloop(n):
+  i = 1
+  while (n > i):
+    print(i)
+    i += 1
+  return i
+
+print(whileloop(10))
