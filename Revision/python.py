@@ -542,13 +542,19 @@ main()
 
 # swapping two numbers without temp variable
 
-a = 10
-b = 20
-print(a , b)
 
-a = a + b
-b = a - b
-a = a - b
-print(a, b)
+
+def swapping(a, b):
+  a = 10
+  b = 20
+
+#imp is logic =
+  a = a + b
+  b = a - b
+  a = a - b
+  return a , b
+
+
+print(swapping(10, 20));
 
 '''
