@@ -571,3 +571,13 @@ def count_given_num(num):
 
 print(count_given_num(1234567))  
 '''
+
+def sum_of_digit(num):
+  sum = 0
+  while(num > 0):
+    rem = num % 10
+    sum = sum + rem
+    num = num // 10
+  return sum
+
+print(sum_of_digit(1234))  
