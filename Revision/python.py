@@ -557,4 +557,17 @@ def swapping(a, b):
 
 print(swapping(10, 20));
 
+
+# count length given number
+
+def count_given_num(num):
+  count = 0
+  while(num > 0):
+    # rem = num % 10
+    count += 1
+    num = num // 10
+
+  return count  
+
+print(count_given_num(1234567))  
 '''
