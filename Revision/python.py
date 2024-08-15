@@ -570,7 +570,7 @@ def count_given_num(num):
   return count  
 
 print(count_given_num(1234567))  
-'''
+
 
 def sum_of_digit(num):
   sum = 0
@@ -581,3 +581,24 @@ def sum_of_digit(num):
   return sum
 
 print(sum_of_digit(1234))  
+
+'''
+
+# Insert an element in an array given position
+
+a = []
+size = int(input("Enter the size of the array: "))
+for i in range(size):
+  val = int(input())
+  a.append(val)
+print(a)  
+
+key = int(input("Enter the value to insert: "))
+pos = int(input("Enter the position: "))
+
+a.append(None)
+
+for i in range(size - 1, pos - 2, -1):
+  a[i + 1] = a[i]
+a[pos]  = key
+print(a)
