@@ -582,7 +582,7 @@ def sum_of_digit(num):
 
 print(sum_of_digit(1234))  
 
-'''
+
 
 # Insert an element in an array given position
 
@@ -602,3 +602,21 @@ for i in range(size - 1, pos - 2, -1):
   a[i + 1] = a[i]
 a[pos]  = key
 print(a)
+
+'''
+
+#check whether a word is anagram or not
+
+def are_anagram(str1, str2):
+  str1 = str1.replace(" ","").lower()
+  str2 = str2.replace(" ","").lower()
+
+  return sorted(str1) == sorted(str2)
+
+word1 = input("Enter the 1st String: ")  
+word2 = input("Enter the 2nd String: ")
+
+if(are_anagram(word1, word2)):
+  print("The given string is Anagram")
+else:
+  print("The given String is not an Anagarm")  
