@@ -27,7 +27,7 @@ def coins():
 
 coins()
 
-'''
+
 # Find the perfect number between 1 to 100;
 
 count = 0
@@ -41,5 +41,33 @@ for i in range(1,100):
   count = 0    
 
 
+'''
+# Input value :
+# n = 8
+# s = DDUUUUDD
 
+# Output Value : 1
+'''
 
+def countingValleys(n, s):
+    count = 0
+    result = 0
+
+    for i in s:
+        if(i == 'U'):
+            count += 1
+        else:
+            count -= 1
+
+        if i == 'U' and count == 0:
+            result += 1
+
+    return result
+
+num = int(input("Enter the number of steps: "))        
+str1 = input("Enter the String: ")
+
+result = countingValleys(num, str1)
+print(result)
+
+'''
