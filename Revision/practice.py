@@ -189,3 +189,20 @@ result = a - b
 print(result)            
 
 '''
+
+T = int(input())
+
+E = list(map(int, input().split()))
+L = list(map(int, input().split()))
+
+current_guests = 0
+max_guests = 0
+
+for i in range(T):
+    current_guests += E[i]
+    current_guests -= L[i]
+
+    if current_guests > max_guests:
+        max_guests = current_guests
+
+print(max_guests)
