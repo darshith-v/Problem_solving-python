@@ -232,7 +232,6 @@ for i in range(len(num)):
         maxElement = num[i]
 print(maxElement)    
 
-'''
 
 # Find the second largest and second smallest element in an array
 
@@ -262,3 +261,22 @@ smallEle = smallestElement(arr)
 
 print("The second largest number is ", largeEle)
 print("The second smallest number is ", smallEle)
+
+'''
+
+# 9 reverse an array
+
+def reverseArray(arr):
+    n = len(arr)
+    start, end = 0 , n - 1
+    while start <= end:
+        arr[start], arr[end] = arr[end], arr[start]
+        start += 1
+        end -= 1
+    print(arr)
+
+reverseArray([5, 4, 3, 2, 1])
+
+
+  
+    
