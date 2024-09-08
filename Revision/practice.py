@@ -188,7 +188,8 @@ for i in str:
 result = a - b
 print(result)            
 
-'''
+
+# 6.
 
 T = int(input())
 
@@ -206,3 +207,58 @@ for i in range(T):
         max_guests = current_guests
 
 print(max_guests)
+
+
+
+#7. Find the smallest number in an array
+
+num = [7, 0, 8, 6, 3]
+
+minElement = float('inf') # some random big number
+
+for i in range(len(num)):
+    minElement = min(minElement, num[i])
+print(minElement)  
+
+
+#8 . Find the biggest number in an array
+
+num = [8, 9, 10, 3, 7]
+
+maxElement = 0
+
+for i in range(len(num)):
+    if num[i] > maxElement:
+        maxElement = num[i]
+print(maxElement)    
+
+'''
+
+# Find the second largest and second smallest element in an array
+
+def largestElement(arr):
+    largest = second_largest = float('-inf')
+    for num in arr:
+        if num > largest:
+            second_largest = largest
+            largest = num
+        elif num > second_largest and num != largest:
+            second_largest = num
+    return second_largest
+
+def smallestElement(arr):
+    smallest = second_smallest = float('inf')        
+    for num in arr:
+        if num < smallest:
+            second_smallest = smallest
+            smallest = num
+        elif num < second_smallest and num != smallest:
+            second_smallest = num
+    return second_smallest            
+
+arr = [4, 5, 7, 8, 8, 2]
+largeEle = largestElement(arr)
+smallEle = smallestElement(arr)
+
+print("The second largest number is ", largeEle)
+print("The second smallest number is ", smallEle)
