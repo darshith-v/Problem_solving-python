@@ -276,7 +276,7 @@ def reverseArray(arr):
 
 reverseArray([5, 4, 3, 2, 1])
 
-'''
+
 # 11 reverse a string
 
 str = "Hello world"
@@ -286,4 +286,27 @@ for i in range(len(str) - 1, -1 , -1):
     empty += str[i]
 print(empty)
 
+'''
 
+# reverse a word or swapping 2 words
+
+str = "Hello world"
+
+space_index = -1
+
+word1 = ""
+word2 = ""
+
+for i in range(len(str) - 1):
+    if str[i] == " ":
+        space_index = i
+        break
+
+for i in range(space_index):
+    word1 += str[i]
+
+for i in range(space_index, len(str)):
+    word2 += str[i]
+
+reverse = word2 +" "+  word1
+print(reverse)
